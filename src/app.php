@@ -13,4 +13,4 @@ echonl($member, $flag);
 echonl($message, $flag);
 echonl($workspace, $flag);
 
-print_r(get_declared_classes());
+echonl(get_declared_classes());
