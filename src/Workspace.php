@@ -1,7 +1,9 @@
 <?php
 
-class Workspace
+class Workspace implements Joinable
 {
+    use HasUniqueId;
+
     private string $url;
     public array $chats = [];
     public array $members = [];

@@ -2,6 +2,8 @@
 
 class Chat
 {
+    use HasUniqueId;
+    
     protected array $messages = [];
 
     public function __construct(

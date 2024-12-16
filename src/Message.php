@@ -2,6 +2,8 @@
 
 class Message
 {
+    use HasUniqueId;
+    
     public string $date;
 
     public function __construct(

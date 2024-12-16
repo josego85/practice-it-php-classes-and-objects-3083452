@@ -2,6 +2,8 @@
 
 class Member
 {
+    use HasUniqueId;
+    
     const ADMIN_ROLE = 'admin';
     const DEFAULT_ROLE = 'member';
 
