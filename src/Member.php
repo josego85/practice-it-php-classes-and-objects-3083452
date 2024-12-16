@@ -1,16 +1,30 @@
 <?php
 
-enum Role: string {
-    case admin = 'admin';
-    case member = 'member';
-}
+class Member
+{
+    const ADMIN_ROLE = 'admin';
+    const DEFAULT_ROLE = 'member';
 
-class Member {
     public string $username;
-    public Role $role;
+    public string $role;
 
-    public function addWorkspaceMember(Workspace $worspace, Member $member){}
-    public function createChat(Chat $chat){}
-    public function createWorkspace(Workspace $worspace){}
-    public function postMessageToChat(Message $message, Chat $chat){}
+    public function addWorkspaceMember()
+    {
+        //
+    }
+
+    public function createChat()
+    {
+        //
+    }
+
+    public function createWorkspace()
+    {
+        //
+    }
+
+    public function postMessageToChat()
+    {
+        //
+    }
 }

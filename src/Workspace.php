@@ -1,10 +1,14 @@
 <?php
 
-class Workspace {
-    /** @var Member[] */
-    public $members = [];
+class Workspace
+{
+    public string $url;
 
     /** @var Chat[] */
-    public $chats = [];
-    public string $url = ".flack.app";
+    public array $chats = [];
+    
+    /** @var Member[] */
+    public array $members = [];
+
+    public static string $urlDomain = '.flack.app';
 }

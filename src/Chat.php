@@ -1,8 +1,9 @@
 <?php
 
-class Chat {
+class Chat
+{
     public string $title;
 
     /** @var Message[] */
-    public $messages = [];
+    public array $messages = [];
 }

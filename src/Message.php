@@ -1,7 +1,8 @@
 <?php
 
-class Message {
+class Message
+{
     public string $content;
     public string $author;
-    public date $date;
+    public string $date;
 }
