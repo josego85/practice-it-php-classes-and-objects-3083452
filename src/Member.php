@@ -7,8 +7,8 @@ class Member
 
     public string $role = self::DEFAULT_ROLE;
 
-    public function __construct(public string $username
-
+    public function __construct(
+        public string $username
     )
     {
         //
@@ -41,8 +41,7 @@ class Member
 
     public function createWorkspace(string $subdomain)
     {
-        $workspace = new Workspace($subdomain);
-        $workspace->setAdmin($this);
+        $workspace = new Workspace($subdomain, $this);
 
         return $workspace;
     }

@@ -8,6 +8,6 @@ class Chat
         public string $title
     )
     {
-        $this->messages = [];
+
     }
 }
